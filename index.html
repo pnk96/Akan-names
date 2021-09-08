@@ -8,12 +8,31 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
     <h1>Would You Like To Know You're Akan name?</h1>
         <p>A child’s name is determined by factors surrounding his or her birth. 
            In Ghana, the day of their birth determines which name they get irrespective 
            of their gender. These Akan names signify the day one is born.</p>
         <p>That being said, most of us know the date you were born not the actual day.</p>
         <p>If you'd like find out your akan name, fill in the following form:</p>
+
+
+        <form>
+            <label>Date</label>
+            <input type="number" id="dd" name="date" value="Enter the date">
+            <label>Month</label>
+            <input type="number" id="mm" name="month" value="Enter the month">
+            <label>Year</label>
+            <input type="number" id="yy" name="year" value="Enter the year"><br>
+
+        <label>Gender</label>
+            <input type="radio" name="gender" id="male" value="Male">
+		    <label>Male</label>
+		    <input type="radio" name="gender" value="Female" id="female">
+            <label>Female</label>
+            <button type="submit" onclick="getAkanName(); return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>Get Akan Name</button>
+            <button type="reset" onclick="clearAkanMessage(); return false;" class="btn btn-default btn-xs"><i class="fa fa-times" aria-hidden="true"></i>Cancel</button>		
+		</form>	
 
   <script src="js/script.js"></script>
 </body>
