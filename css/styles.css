@@ -21,3 +21,27 @@ input[type=number], select, textarea {
     margin-bottom: 20px;
     resize: vertical;
   }
+
+  .alertAkan {
+    padding: 20px;
+    background-color: #038103;
+    color: white;
+    text-align: center;
+    margin-top: 9rem;
+  }
+
+  #closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #akanButton {
+    margin-left: 10rem;
+    margin-top: 2rem;
+  }

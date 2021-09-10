@@ -17,32 +17,39 @@
               In Ghana, the day of their birth determines which name they get irrespective<br> 
               of their gender. These Akan names signify the day one is born.</p>
             <p>That being said, most of us know the date you were born not the actual day.</p>
-            <p>If you'd like find out your akan name, fill in the following form;</p>
+            <p>If you'd like to find out your akan name, fill in the following form;</p>
           </div>  
 
           <div class="col-sm-4">
-            <form id="akanForm">
-                <label id="gndr"><b>Gender</b></label><br>
-                <input type="radio" name="gender" id="male" value="Male">
-                <label>Male</label><br>
-                <input type="radio" name="gender" value="Female" id="female">
-                <label>Female</label><br>
+            <p><b>Gender</b></p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" value="Male" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Male
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" value="Female" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2">
+                Female
+              </label>
+            </div>
                 <br>  
                 <label>Date</label>
-                <input type="number" id="dd" name="date" value="Enter the date"><br>
+                <input type="number" id="dd" name="date" maxlength="10" size="5" placeholder="DD" value="Enter the date"><br>
                 <label>Month</label>
-                <input type="number" id="mm" name="month" value="Enter the month"><br>
+                <input type="number" id="mm" name="month" maxlength="10" size="5" placeholder="MM" value="Enter the month"><br>
                 <label>Year</label>
-                <input type="number" id="yy" name="year" value="Enter the year"><br>
+                <input type="number" id="yy" name="year" maxlength="10" size="5" placeholder="YYYY" value="Enter the year"><br>
     
-                <button type="submit" onclick="akanName(); return false;" class="btn btn-success btn-lg">Get Your Akan Name</button>
+                <button id="akanButton" type="submit" onclick="akanName(); return false;" class="btn btn-success btn-lg">Get Your Akan Name</button>
             </form>  
           </div>
         </div>
             <p>
-              <div class="alertAkan">
-                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-                <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+              <div id="alertAkan" class="alert alert-primary alert-dismissable fade show d-none" role="alert"> 
+                <strong id="showAkan"></strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
               </div>
             </p>
     </div>
