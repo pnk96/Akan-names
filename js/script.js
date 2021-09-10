@@ -1,6 +1,6 @@
 const frm = document.querySelector("#akanForm");
 const myAlert = document.querySelector("#alertAkan");
-const alertText = document.querySelector("showAkan");
+const alertText = document.querySelector("#showAkan");
 
 const maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 const femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
@@ -40,4 +40,4 @@ frm.addEventListener("submit", function(e){
         myAlert.classList.add("d-block");
         alertText.innerHTML = 'Your Akan name is ${femaleNames[day]}';
     }
-    })        
+    })          

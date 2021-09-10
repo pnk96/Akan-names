@@ -45,3 +45,7 @@ input[type=number], select, textarea {
     margin-left: 10rem;
     margin-top: 2rem;
   }
+
+  #showAkan {
+    text-align: center;
+  }
