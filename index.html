@@ -21,28 +21,28 @@
           </div>  
 
           <div class="col-sm-4">
-            <p><b>Gender</b></p>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gender" value="Male" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Male
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gender" value="Female" id="flexRadioDefault2">
-              <label class="form-check-label" for="flexRadioDefault2">
+            <form id="akanForm" >
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" value="Male" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                 Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" value="Female" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
                 Female
-              </label>
-            </div>
+                </label>
+              </div>
                 <br>  
                 <label>Date</label>
-                <input type="number" id="dd" name="date" maxlength="10" size="5" placeholder="DD" value="Enter the date"><br>
+                <input type="number" min="1" max="31" id="dd" name="date" size="5" placeholder="DD"><br>
                 <label>Month</label>
-                <input type="number" id="mm" name="month" maxlength="10" size="5" placeholder="MM" value="Enter the month"><br>
+                <input type="number" min="1" max="12" id="mm" name="month" size="5" placeholder="MM"><br>
                 <label>Year</label>
-                <input type="number" id="yy" name="year" maxlength="10" size="5" placeholder="YYYY" value="Enter the year"><br>
+                <input type="number" min="1930" max="2021" id="yy" name="year" placeholder="YYYY"><br>
     
-                <button id="akanButton" type="submit" onclick="akanName(); return false;" class="btn btn-success btn-lg">Get Your Akan Name</button>
+                <button type="submit" id="akanButton" class="btn btn-success btn-lg">Get Your Akan Name</button>
             </form>  
           </div>
         </div>
